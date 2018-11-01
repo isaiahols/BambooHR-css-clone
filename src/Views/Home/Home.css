@@ -1,0 +1,51 @@
+.home-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.home-main-top {
+    /* position: absolute; */
+    /* top: 35px; */
+    height: 80vh;
+    width: 100vw;
+    background-image: url('https://www.bamboohr.com/img/homepage/home-hero-mobile-min.jpg');
+    background-position: 50% -35px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 75px 45px;
+}
+
+.home-main-top h2{
+    margin-top: 50px;
+    font-size: 38px;
+    line-height: 1.2em;
+
+}
+
+.home-main-top h4{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.2em;
+}
+
+.home-top-button{
+    width: 267px;
+    height: 64px;
+    background: #73c41d;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 65px;
+}
+
+.home-companies-container {
+    height: 180px;
+    width: 100vw;
+    background: #fff;
+    display: grid;
+    
+}
