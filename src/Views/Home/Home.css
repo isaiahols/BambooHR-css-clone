@@ -43,9 +43,100 @@
 }
 
 .home-companies-container {
-    height: 180px;
     width: 100vw;
+    padding: 30px 14px;
     background: #fff;
     display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.home-companies-container img {
+    margin:  14px 0;
+    width: 138px;
+    max-width: 100%;
+}
+
+
+/* Virtual Conference Section */
+.home-virtual-summit-container {
+    height: 85vh;
+    width: 100vw;
+    background-image: url('https://www.bamboohr.com/img/homepage/virtual-banner-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 150px 1fr 1fr; */
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+        "logo   logo"
+        "words   words"
+        "julie   ben"
+        "register   register";
+}
+
+#vc-summit-logo {
+    grid-area: logo;
+    max-width: 155px;
+}
+
+#vc-worlds-largest{
+    grid-area: words;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.vc-people {
+    font-size: .9em;
+}
+
+.vc-people h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.vc-people h5 {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.vc-people img{
+    width: 140px;
+    border: 6px solid hsla(0,0%,100%,.5);
+    border-radius: 50%;
+}
+
+#vc-julie{
+    grid-area: julie;
+}
+#vc-ben{
+    grid-area: ben;
+}
+
+#vc-register-today{
+    grid-area: register;
+    font-size: 27px;
+    border-bottom: solid white;
+    line-height: 2em;
+}
+
+
+
+
+
+/* media queries */
+@media (min-width: 480px){
+    
+}
+@media (min-width: 769px){
+    .home-companies-container {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 40px 50px;
+    }
     
 }
